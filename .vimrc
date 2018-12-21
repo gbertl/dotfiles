@@ -104,4 +104,4 @@ set diffopt+=vertical
 
 let NERDTreeAutoDeleteBuffer = 1
 
-nnoremap <leader>g :Gstatus<cr>
+set nohlsearch
