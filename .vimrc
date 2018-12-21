@@ -71,10 +71,10 @@ set ignorecase
 set smartcase
 
 nnoremap <silent> <leader>n :NERDTreeToggle<cr>
-nnoremap <leader>k :NERDTreeFromBookmark<space>
+nnoremap <silent> <leader>k :NERDTreeFromBookmark<space>
 
-nnoremap <leader>p :CtrlP<cr>
-nnoremap <leader>b ::CtrlPBuffer<cr>
+nnoremap <silent> <leader>p :CtrlP<cr>
+nnoremap <silent> <leader>b ::CtrlPBuffer<cr>
 
 " list all buffer at the top and show only filenames
 let g:airline#extensions#tabline#enabled = 1
