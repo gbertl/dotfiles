@@ -70,7 +70,7 @@ vnoremap <S-Tab> <gv
 set ignorecase
 set smartcase
 
-nnoremap <leader>t :NERDTreeToggle<cr>
+nnoremap <silent> <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>k :NERDTreeFromBookmark<space>
 
 nnoremap <leader>p :CtrlP<cr>
