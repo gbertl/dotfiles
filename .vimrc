@@ -73,7 +73,7 @@ set smartcase
 nnoremap <silent> <leader>n :NERDTreeToggle<cr>
 nnoremap <silent> <leader>k :NERDTreeFromBookmark<space>
 
-nnoremap <silent> <leader>p :CtrlP<cr>
+nnoremap <silent> <leader>t :CtrlP<cr>
 nnoremap <silent> <leader>b :CtrlPBuffer<cr>
 
 " list all buffer at the top and show only filenames
