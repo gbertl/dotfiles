@@ -14,7 +14,7 @@ Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-dispatch'
-Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-commentary'
 Plug 'easymotion/vim-easymotion'
 
 call plug#end()
