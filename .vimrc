@@ -106,3 +106,6 @@ set diffopt+=vertical
 let NERDTreeAutoDeleteBuffer = 1
 
 set nohlsearch
+
+nnoremap ; :
+vnoremap ; :
