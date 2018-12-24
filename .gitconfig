@@ -3,3 +3,6 @@
 	email = gilbert.lacasandile@gmail.com
 [core]
 	editor = vim
+[alias]
+  l = log --oneline
+  dc = diff --cached
