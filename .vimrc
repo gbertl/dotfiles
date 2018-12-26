@@ -126,3 +126,6 @@ let g:startify_lists = [
 nnoremap <silent> <leader>gs :Gstatus<cr>
 nnoremap <leader>gg :Git!<space>
 nnoremap <silent> <leader>gdq :clo\|bd<cr>
+
+nnoremap <silent> <leader>ve :e ~/.vimrc<cr>
+nnoremap <silent> <leader>vs :so ~/.vimrc<cr>
