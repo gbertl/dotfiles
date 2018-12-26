@@ -6,3 +6,4 @@
 [alias]
   l = log --oneline
   dc = diff --cached
+  sv = !git add -A && git commit -m 'wip'
