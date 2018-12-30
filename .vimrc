@@ -127,3 +127,5 @@ nnoremap <leader>gg :Git!<space>
 nnoremap <silent> <leader>gl :Git log --oneline<cr>
 
 nnoremap <silent> <leader>ve :e ~/.vimrc<cr>
+
+map \ <Plug>(easymotion-prefix)
