@@ -123,7 +123,6 @@ let g:startify_lists = [
       \ { 'type': 'commands',  'header': ['   Commands']       },
       \ ]
 
-nnoremap <silent> <leader>gs :Gstatus<cr>
 nnoremap <leader>gg :Git!<space>
 
 nnoremap <silent> <leader>ve :e ~/.vimrc<cr>
