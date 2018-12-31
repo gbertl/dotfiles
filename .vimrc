@@ -17,6 +17,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-commentary'
 Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-startify'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
 
