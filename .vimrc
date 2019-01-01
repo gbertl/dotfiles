@@ -122,7 +122,6 @@ let g:startify_lists = [
       \ { 'type': 'commands',  'header': ['   Commands']       },
       \ ]
 
-nnoremap <leader>gg :Git!<space>
-nnoremap <silent> <leader>gl :Git log --oneline<cr>
+nnoremap <silent> <leader>g :Gstatus<cr>
 
 nnoremap <silent> <leader>ve :e ~/.vimrc<cr>
