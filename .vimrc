@@ -15,7 +15,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-commentary'
-Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-startify'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
@@ -127,5 +126,3 @@ nnoremap <leader>gg :Git!<space>
 nnoremap <silent> <leader>gl :Git log --oneline<cr>
 
 nnoremap <silent> <leader>ve :e ~/.vimrc<cr>
-
-map <space> <Plug>(easymotion-prefix)
