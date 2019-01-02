@@ -2,7 +2,7 @@
 	name = gilbertlcsndle
 	email = gilbert.lacasandile@gmail.com
 [core]
-	editor = vim
+	editor = nvim
 [alias]
   l = log --oneline
   dc = diff --cached
