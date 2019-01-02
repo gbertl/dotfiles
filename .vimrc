@@ -124,4 +124,4 @@ let g:startify_lists = [
 
 nnoremap <silent> <leader>g :Gstatus<cr>
 
-nnoremap <silent> <leader>ve :e ~/.vimrc<cr>
+nnoremap <silent> <leader>ve :sp ~/.vimrc<cr>
