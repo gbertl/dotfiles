@@ -103,8 +103,6 @@ let NERDTreeMinimalUI=1
 
 set hid
 
-set diffopt+=vertical
-
 let NERDTreeAutoDeleteBuffer = 1
 
 set nohlsearch
