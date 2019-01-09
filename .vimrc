@@ -17,6 +17,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-commentary'
 Plug 'mhinz/vim-startify'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
@@ -124,3 +125,5 @@ let g:startify_lists = [
 nnoremap <silent> <leader>g :Gstatus<cr>
 
 nnoremap <silent> <leader>ve :sp ~/.vimrc<cr>
+
+let g:AutoPairsFlyMode = 1
