@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-fugitive'
-Plug 'lifepillar/vim-solarized8'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
@@ -27,7 +27,7 @@ call plug#end()
 
 set background=dark
 set termguicolors
-colorscheme solarized8
+colorscheme dracula
 
 " fixes termguicolors
 set t_Co=256
@@ -86,8 +86,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " enable > 
 let g:airline_powerline_fonts = 1
 
-let g:airline_theme='solarized'
-let g:airline_solarized_bg='dark'
+let g:airline_theme='minimalist'
 
 " make ctrlp open based on nerdtree working dir
 let g:NERDTreeChDirMode       = 2
