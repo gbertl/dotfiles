@@ -68,11 +68,6 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-nnoremap <Tab> >>_
-nnoremap <S-Tab> <<_
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
-
 set ignorecase
 set smartcase
 
