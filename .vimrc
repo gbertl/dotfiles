@@ -133,3 +133,6 @@ let g:ycm_key_list_previous_completion = []
 nnoremap <leader>a :Ack!<space>
 
 nnoremap <silent> <leader>f :NERDTreeFind<cr>
+
+let g:indentLine_bufNameExclude = ['NERD_tree.*']
+let g:indentLine_bufTypeExclude = ['help']
