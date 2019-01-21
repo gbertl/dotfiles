@@ -75,7 +75,7 @@ set smartcase
 nnoremap <silent> <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>k :NERDTreeFromBookmark<space>
 
-nnoremap <silent> <leader>t :CtrlP<cr>
+nnoremap <silent> <leader>p :CtrlP<cr>
 nnoremap <silent> <leader>b :CtrlPBuffer<cr>
 
 tnoremap <esc> <c-\><c-n>
