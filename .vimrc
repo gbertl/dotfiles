@@ -131,3 +131,5 @@ nnoremap <silent> <leader>f :NERDTreeFind<cr>
 
 let g:indentLine_bufNameExclude = ['NERD_tree.*']
 let g:indentLine_bufTypeExclude = ['help']
+
+let g:user_emmet_leader_key='<C-Z>'
