@@ -102,3 +102,5 @@ alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 eval "$(dircolors ~/.dircolors)";
+
+alias c=clear
