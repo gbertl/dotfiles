@@ -104,3 +104,5 @@ eval "$(rbenv init -)"
 eval "$(dircolors ~/.dircolors)";
 
 alias c=clear
+
+export KEYTIMEOUT=1
