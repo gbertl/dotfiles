@@ -106,3 +106,6 @@ eval "$(dircolors ~/.dircolors)";
 alias c=clear
 
 export KEYTIMEOUT=1
+
+bindkey "^P" history-beginning-search-backward
+bindkey "^N" history-beginning-search-forward
