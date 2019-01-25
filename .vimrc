@@ -22,6 +22,7 @@ Plug 'tpope/vim-endwise'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
+Plug 'pangloss/vim-javascript'
 
 call plug#end()
 
