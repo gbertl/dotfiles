@@ -24,6 +24,7 @@ Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
+Plug 'tpope/vim-eunuch'
 
 call plug#end()
 
