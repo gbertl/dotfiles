@@ -25,6 +25,7 @@ Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
 Plug 'tpope/vim-eunuch'
+Plug 'vim-ruby/vim-ruby'
 
 call plug#end()
 
@@ -156,3 +157,7 @@ let g:ycm_show_diagnostics_ui = 0
 let g:indentLine_fileTypeExclude = ['json']
 
 set mouse=a
+
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_classes_in_global = 1
+let g:rubycomplete_rails = 1
