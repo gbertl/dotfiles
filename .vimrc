@@ -26,6 +26,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
 Plug 'tpope/vim-eunuch'
 Plug 'vim-ruby/vim-ruby'
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()
 
@@ -161,3 +162,12 @@ set mouse=a
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
