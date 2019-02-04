@@ -103,8 +103,6 @@ export PATH=$HOME/.rbenv/bin:$HOME/.yarn/bin:$PATH
 eval "$(rbenv init -)"
 eval "$(dircolors ~/.dircolors)";
 
-alias c=clear
-
 export KEYTIMEOUT=1
 
 bindkey "^P" history-beginning-search-backward
