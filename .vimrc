@@ -174,3 +174,5 @@ let g:syntastic_check_on_wq = 0
 set autoread
 
 let g:startify_session_dir = '~/.vim/session'
+
+let g:vue_disable_pre_processors=1
