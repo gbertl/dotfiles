@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-fugitive'
-Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
@@ -31,8 +31,7 @@ call plug#end()
 
 set background=dark
 set termguicolors
-let g:gruvbox_italic=1
-colorscheme gruvbox
+colorscheme dracula
 
 " fixes termguicolors
 set t_Co=256
