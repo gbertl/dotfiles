@@ -125,7 +125,10 @@ let g:startify_lists = [
       \ { 'type': 'commands',  'header': ['   Commands']       },
       \ ]
 
-nnoremap <silent> <leader>g :Gstatus<cr>
+nnoremap <silent> <leader>gst :Gstatus<cr>
+nnoremap <leader>gri :Grebase -i<space>
+nnoremap <leader>gsp :Gsplit<space>
+nnoremap <silent> <leader>gpf :Gpush -f<cr>
 
 nnoremap <silent> <leader>ve :sp ~/.vimrc<cr>
 
