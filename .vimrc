@@ -178,3 +178,4 @@ set autoread
 let g:startify_session_dir = '~/.vim/session'
 
 let g:vue_disable_pre_processors=1
+set mouse=a
