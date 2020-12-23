@@ -7,7 +7,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
-Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --ts-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --ts-completer --clang-completer --rust-completer' }
 Plug 'tpope/vim-rails'
 Plug 'Yggdroot/indentLine'
 Plug 'mileszs/ack.vim'
