@@ -78,9 +78,6 @@ set smartcase
 nnoremap <silent> <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>k :NERDTreeFromBookmark<space>
 
-nnoremap <silent> <leader>t :CtrlP<cr>
-nnoremap <silent> <leader>b :CtrlPBuffer<cr>
-
 tnoremap <esc> <c-\><c-n>
 
 " list all buffer at the top and show only filenames
@@ -124,8 +121,6 @@ nnoremap <silent> <leader>gst :Gstatus<cr>
 nnoremap <leader>gri :Grebase -i<space>
 nnoremap <leader>gsp :Gsplit<space>
 nnoremap <silent> <leader>gpf :Gpush -f<cr>
-
-nnoremap <silent> <leader>ve :sp ~/.vimrc<cr>
 
 let g:ycm_key_list_select_completion = []
 let g:ycm_key_list_previous_completion = []
