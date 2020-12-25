@@ -115,11 +115,6 @@ let g:startify_lists = [
       \ { 'type': 'commands',  'header': ['   Commands']       },
       \ ]
 
-nnoremap <silent> <leader>gst :Gstatus<cr>
-nnoremap <leader>gri :Grebase -i<space>
-nnoremap <leader>gsp :Gsplit<space>
-nnoremap <silent> <leader>gpf :Gpush -f<cr>
-
 let g:ycm_key_list_select_completion = []
 let g:ycm_key_list_previous_completion = []
 
