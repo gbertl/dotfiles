@@ -124,9 +124,6 @@ nnoremap <leader>f :NERDTreeFind<cr>
 let g:indentLine_bufNameExclude = ['NERD_tree.*']
 let g:indentLine_bufTypeExclude = ['help']
 
-nnoremap \ ,
-vnoremap \ ,
-
 autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \|   PlugInstall --sync | q
