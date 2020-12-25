@@ -74,7 +74,7 @@ nnoremap <C-l> <C-w>l
 set ignorecase
 set smartcase
 
-nnoremap <leader>n :NERDTreeToggle<cr>
+nnoremap <leader>k :NERDTreeToggle<cr>
 
 tnoremap <esc> <c-\><c-n>
 
