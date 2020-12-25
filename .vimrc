@@ -7,7 +7,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
-Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --ts-completer --clang-completer --rust-completer' }
 Plug 'tpope/vim-rails'
 Plug 'Yggdroot/indentLine'
 Plug 'mileszs/ack.vim'
@@ -115,9 +114,6 @@ let g:startify_lists = [
       \ { 'type': 'commands',  'header': ['   Commands']       },
       \ ]
 
-let g:ycm_key_list_select_completion = []
-let g:ycm_key_list_previous_completion = []
-
 nnoremap <leader>a :Ack!<space>
 nnoremap <leader>f :NERDTreeFind<cr>
 
@@ -130,8 +126,6 @@ autocmd VimEnter *
   \| endif
 
 set completeopt-=preview
-
-let g:ycm_show_diagnostics_ui = 0
 
 let g:indentLine_fileTypeExclude = ['json']
 
