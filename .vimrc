@@ -75,7 +75,6 @@ set ignorecase
 set smartcase
 
 nnoremap <leader>n :NERDTreeToggle<cr>
-nnoremap <leader>k :NERDTreeFromBookmark<space>
 
 tnoremap <esc> <c-\><c-n>
 
