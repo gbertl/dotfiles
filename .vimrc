@@ -22,7 +22,6 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
-Plug 'posva/vim-vue'
 Plug 'tpope/vim-eunuch'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-syntastic/syntastic'
@@ -165,5 +164,4 @@ set autoread
 
 let g:startify_session_dir = '~/.vim/session'
 
-let g:vue_disable_pre_processors=1
 set mouse=a
