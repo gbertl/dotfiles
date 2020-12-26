@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin()
 
 Plug 'tpope/vim-fugitive'
 Plug 'morhetz/gruvbox'
