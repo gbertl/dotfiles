@@ -24,6 +24,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-eunuch'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-syntastic/syntastic'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -151,3 +152,5 @@ let g:startify_session_dir = '~/.config/nvim/session'
 set mouse=a
 
 nnoremap <leader>v :e ~/.config/nvim/init.vim<cr>
+
+let g:coc_global_extensions = ['coc-solargraph']
