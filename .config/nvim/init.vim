@@ -146,7 +146,7 @@ let g:syntastic_check_on_wq = 0
 
 set autoread
 
-let g:startify_session_dir = '~/.vim/session'
+let g:startify_session_dir = '~/.config/nvim/session'
 
 set mouse=a
 
