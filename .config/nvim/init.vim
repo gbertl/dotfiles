@@ -23,6 +23,8 @@ Plug 'tpope/vim-eunuch'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-syntastic/syntastic'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -141,3 +143,6 @@ set mouse=a
 nnoremap <leader>v :e ~/.config/nvim/init.vim<cr>
 
 let g:coc_global_extensions = ['coc-solargraph']
+
+map <c-p> :Files<cr>
+let $FZF_DEFAULT_OPTS="--layout reverse"
