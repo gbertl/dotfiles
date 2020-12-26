@@ -149,3 +149,5 @@ set autoread
 let g:startify_session_dir = '~/.vim/session'
 
 set mouse=a
+
+nnoremap <leader>v :e ~/.config/nvim/init.vim<cr>
