@@ -8,7 +8,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rails'
 Plug 'Yggdroot/indentLine'
-Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-dispatch'
@@ -104,7 +103,6 @@ let g:startify_lists = [
       \ { 'type': 'commands',  'header': ['   Commands']       },
       \ ]
 
-nnoremap <leader>a :Ack!<space>
 nnoremap <leader>f :NERDTreeFind<cr>
 
 let g:indentLine_bufNameExclude = ['NERD_tree.*']
