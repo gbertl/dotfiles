@@ -3,7 +3,6 @@ call plug#begin()
 Plug 'tpope/vim-fugitive'
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
@@ -85,15 +84,7 @@ let g:airline_powerline_fonts = 1
 
 let g:airline_theme='minimalist'
 
-" make ctrlp open based on nerdtree working dir
 let g:NERDTreeChDirMode       = 2
-let g:ctrlp_working_path_mode = 'rw'
-
-if executable('ag')
-  set grepprg=ag\ --nogroup\ --nocolor
-  let g:ctrlp_user_command = 'ag --literal --files-with-matches --nocolor --hidden -g "" %s'
-  let g:ackprg = 'ag --vimgrep'
-endif
 
 let NERDTreeMinimalUI=1
 
