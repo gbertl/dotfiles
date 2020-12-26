@@ -76,8 +76,6 @@ set smartcase
 
 nnoremap <leader>k :NERDTreeToggle<cr>
 
-tnoremap <esc> <c-\><c-n>
-
 " list all buffer at the top and show only filenames
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
