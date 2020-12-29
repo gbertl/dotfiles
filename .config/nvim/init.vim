@@ -143,7 +143,7 @@ set mouse=a
 
 nnoremap <leader>v :e ~/.config/nvim/init.vim<cr>
 
-let g:coc_global_extensions = ['coc-solargraph']
+let g:coc_global_extensions = ['coc-solargraph', 'coc-tsserver']
 
 map <c-p> :Files<cr>
 let $FZF_DEFAULT_OPTS="--layout reverse"
