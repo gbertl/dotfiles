@@ -1,7 +1,6 @@
 call plug#begin()
 
 Plug 'tpope/vim-fugitive'
-Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -26,13 +25,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
 set background=dark
 set termguicolors
-let g:gruvbox_italic=1
-colorscheme gruvbox
 
 " fixes termguicolors
 set t_Co=256
@@ -147,3 +145,5 @@ let g:coc_global_extensions = ['coc-solargraph', 'coc-tsserver']
 
 map <c-p> :Files<cr>
 let $FZF_DEFAULT_OPTS="--layout reverse"
+
+colorscheme dracula
