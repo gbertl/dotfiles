@@ -99,9 +99,6 @@ source $ZSH/oh-my-zsh.sh
 if [ "$TMUX" = "" ]; then tmux; fi
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-export PATH=$HOME/.rbenv/bin:$HOME/.yarn/bin:$PATH
-eval "$(rbenv init -)"
-
 export KEYTIMEOUT=1
 
 bindkey "^P" history-beginning-search-backward
