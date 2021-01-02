@@ -140,7 +140,7 @@ nnoremap <leader>v :e ~/.config/nvim/init.vim<cr>
 
 let g:coc_global_extensions = ['coc-solargraph', 'coc-tsserver']
 
-map <c-p> :GFiles<cr>
+map <c-p> :Files<cr>
 let $FZF_DEFAULT_OPTS="--layout reverse"
 
 colorscheme dracula
