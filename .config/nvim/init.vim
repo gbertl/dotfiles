@@ -78,10 +78,6 @@ nnoremap <leader>k :NERDTreeToggle<cr>
 " list all buffer at the top and show only filenames
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
-
-" enable > 
-let g:airline_powerline_fonts = 1
-
 let g:airline_theme='minimalist'
 
 let g:NERDTreeChDirMode       = 2
