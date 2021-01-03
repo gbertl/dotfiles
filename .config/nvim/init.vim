@@ -27,6 +27,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'branch': 'release/0.x'
+  \ }
 
 call plug#end()
 
@@ -144,3 +148,6 @@ map <c-p> :Files<cr>
 let $FZF_DEFAULT_OPTS="--layout reverse"
 
 colorscheme dracula
+
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
