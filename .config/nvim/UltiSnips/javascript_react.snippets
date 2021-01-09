@@ -1,0 +1,16 @@
+priority 1
+
+snippet rfc "react functional component" b
+import React from "react"
+import './`!p snip.rv = snip.basename`.css'
+
+function `!p snip.rv = snip.basename`(){
+	return(
+		<div className="`!p snip.rv = snip.basename.lower()`">
+			$0
+		</div>
+		)
+}
+
+export default `!p snip.rv = snip.basename`
+endsnippet
