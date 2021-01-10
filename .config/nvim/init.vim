@@ -23,7 +23,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'morhetz/gruvbox'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
@@ -139,7 +139,8 @@ let g:coc_global_extensions = ['coc-solargraph', 'coc-tsserver', 'coc-snippets']
 map <c-p> :Files<cr>
 let $FZF_DEFAULT_OPTS="--layout reverse"
 
-colorscheme dracula
+let g:gruvbox_italic=1
+autocmd vimenter * ++nested colorscheme gruvbox
 
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
