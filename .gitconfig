@@ -1,11 +1,7 @@
 [user]
 	name = gilbertlc
 	email = gilbert.lacasandile@gmail.com
-[core]
-	editor = nvim
 [alias]
   l = log --oneline
   dc = diff --cached
   sv = !git add -A && git commit -m 'wip'
-[commit]
-  template = ~/.gitmessage
