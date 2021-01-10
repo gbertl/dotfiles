@@ -76,8 +76,6 @@ nnoremap <C-l> <C-w>l
 set ignorecase
 set smartcase
 
-nnoremap <leader>k :NERDTreeToggle<cr>
-
 " list all buffer at the top and show only filenames
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
@@ -102,8 +100,6 @@ let g:startify_lists = [
       \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
       \ { 'type': 'commands',  'header': ['   Commands']       },
       \ ]
-
-nnoremap <leader>f :NERDTreeFind<cr>
 
 let g:indentLine_bufNameExclude = ['NERD_tree.*']
 let g:indentLine_bufTypeExclude = ['help']
@@ -138,8 +134,6 @@ let g:startify_session_dir = '~/.config/nvim/session'
 
 set mouse=a
 
-nnoremap <leader>v :e ~/.config/nvim/init.vim<cr>
-
 let g:coc_global_extensions = ['coc-solargraph', 'coc-tsserver', 'coc-snippets']
 
 map <c-p> :Files<cr>
@@ -157,3 +151,8 @@ let g:user_emmet_settings = {
 \}
 
 let g:user_emmet_leader_key='<C-Z>'
+
+" Leader mappings
+nnoremap <leader>k :NERDTreeToggle<cr>
+nnoremap <leader>f :NERDTreeFind<cr>
+nnoremap <leader>v :e ~/.config/nvim/init.vim<cr>
