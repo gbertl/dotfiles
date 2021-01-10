@@ -156,4 +156,4 @@ let g:user_emmet_leader_key='<C-Z>'
 " Leader mappings
 nnoremap <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>f :NERDTreeFind<cr>
-nnoremap <leader>v :e ~/.config/nvim/init.vim<cr>
+nnoremap <leader>i :e ~/.config/nvim/init.vim<cr>
