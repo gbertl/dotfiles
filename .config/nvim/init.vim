@@ -136,7 +136,7 @@ set mouse=a
 
 let g:coc_global_extensions = ['coc-solargraph', 'coc-tsserver', 'coc-snippets']
 
-map <c-p> :Files<cr>
+map <silent><c-p> :Files<cr>
 let $FZF_DEFAULT_OPTS="--layout reverse"
 
 let g:gruvbox_italic=1
@@ -154,6 +154,6 @@ let g:user_emmet_settings = {
 let g:user_emmet_leader_key='<C-Z>'
 
 " Leader mappings
-nnoremap <leader>n :NERDTreeToggle<cr>
-nnoremap <leader>f :NERDTreeFind<cr>
-nnoremap <leader>i :e ~/.config/nvim/init.vim<cr>
+nnoremap <silent><leader>n :NERDTreeToggle<cr>
+nnoremap <silent><leader>f :NERDTreeFind<cr>
+nnoremap <silent><leader>i :e ~/.config/nvim/init.vim<cr>
