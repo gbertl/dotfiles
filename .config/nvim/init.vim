@@ -158,3 +158,5 @@ nnoremap <silent><leader>f :NERDTreeFind<cr>
 nnoremap <silent><leader>i :e ~/.config/nvim/init.vim<cr>
 
 nnoremap <silent><c-t> :Buffers<cr>
+
+let g:startify_files_number = 5
