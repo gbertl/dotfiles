@@ -161,3 +161,4 @@ nnoremap <silent><c-t> :Buffers<cr>
 
 let g:startify_files_number = 5
 let g:startify_custom_indices = ['l',';','f','d','s','a','h','g']
+let g:startify_fortune_use_unicode = 1
