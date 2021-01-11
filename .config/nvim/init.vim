@@ -156,3 +156,5 @@ let g:user_emmet_leader_key='<C-Z>'
 nnoremap <silent><leader>n :NERDTreeToggle<cr>
 nnoremap <silent><leader>f :NERDTreeFind<cr>
 nnoremap <silent><leader>i :e ~/.config/nvim/init.vim<cr>
+
+nnoremap <silent><c-t> :Buffers<cr>
