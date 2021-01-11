@@ -160,3 +160,4 @@ nnoremap <silent><leader>i :e ~/.config/nvim/init.vim<cr>
 nnoremap <silent><c-t> :Buffers<cr>
 
 let g:startify_files_number = 5
+let g:startify_custom_indices = ['l',';','f','d','s','a','h','g']
