@@ -22,7 +22,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'morhetz/gruvbox'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
@@ -80,7 +80,7 @@ set smartcase
 " list all buffer at the top and show only filenames
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline_theme='minimalist'
+let g:airline_theme='onehalfdark'
 
 let g:NERDTreeChDirMode       = 2
 
@@ -140,8 +140,7 @@ let g:coc_global_extensions = ['coc-solargraph', 'coc-tsserver', 'coc-snippets']
 map <silent><c-p> :Files<cr>
 let $FZF_DEFAULT_OPTS="--layout reverse"
 
-let g:gruvbox_italic=1
-autocmd vimenter * ++nested colorscheme gruvbox
+colorscheme onehalfdark
 
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
