@@ -166,3 +166,4 @@ let g:floaterm_keymap_new    = '<leader>f'
 let g:floaterm_keymap_prev   = '[t'
 let g:floaterm_keymap_next   = ']t'
 let g:floaterm_keymap_toggle = '<leader>t'
+let g:floaterm_autoclose = 1
