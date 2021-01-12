@@ -167,3 +167,13 @@ let g:floaterm_keymap_prev   = '[t'
 let g:floaterm_keymap_next   = ']t'
 let g:floaterm_keymap_toggle = '<leader>t'
 let g:floaterm_autoclose = 1
+
+function s:open_in_normal_window() abort
+  let f = findfile(expand('<cfile>'))
+  if !empty(f) && has_key(nvim_win_get_config(win_getid()), 'anchor')
+    FloatermHide
+    execute 'e ' . f
+  endif
+endfunction
+
+autocmd FileType floaterm nnoremap <silent><buffer> gf :call <SID>open_in_normal_window()<CR>
