@@ -166,7 +166,7 @@ let g:floaterm_keymap_new    = '<leader>f'
 let g:floaterm_keymap_prev   = '[t'
 let g:floaterm_keymap_next   = ']t'
 let g:floaterm_keymap_toggle = '<leader>t'
-let g:floaterm_autoclose = 1
+let g:floaterm_autoclose = 2
 
 function s:open_in_normal_window() abort
   let f = findfile(expand('<cfile>'))
