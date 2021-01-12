@@ -157,6 +157,7 @@ let g:user_emmet_leader_key='<C-Z>'
 " Leader mappings
 nnoremap <silent><leader>n :NERDTreeToggle<cr>
 nnoremap <silent><leader>i :e ~/.config/nvim/init.vim<cr>
+inoremap <silent><leader>, <esc>:w<cr>
 
 let g:startify_files_number = 5
 let g:startify_custom_indices = ['l',';','f','d','s','a','h','g']
