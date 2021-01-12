@@ -29,6 +29,7 @@ Plug 'prettier/vim-prettier', {
   \ 'branch': 'release/0.x'
   \ }
 Plug 'voldikss/vim-floaterm'
+Plug 'ap/vim-css-color'
 
 call plug#end()
 
