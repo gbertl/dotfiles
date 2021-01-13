@@ -29,7 +29,6 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'branch': 'release/0.x'
   \ }
-Plug 'voldikss/vim-floaterm'
 Plug 'ap/vim-css-color'
 
 call plug#end()
@@ -162,19 +161,3 @@ nnoremap <silent><leader>i :e ~/.config/nvim/init.vim<cr>
 let g:startify_files_number = 5
 let g:startify_custom_indices = ['l',';','f','d','s','a','h','g']
 let g:startify_fortune_use_unicode = 1
-
-let g:floaterm_keymap_new    = '<leader>f'
-let g:floaterm_keymap_prev   = '[t'
-let g:floaterm_keymap_next   = ']t'
-let g:floaterm_keymap_toggle = '<leader>t'
-let g:floaterm_autoclose = 2
-
-function s:open_in_normal_window() abort
-  let f = findfile(expand('<cfile>'))
-  if !empty(f) && has_key(nvim_win_get_config(win_getid()), 'anchor')
-    FloatermHide
-    execute 'e ' . f
-  endif
-endfunction
-
-autocmd FileType floaterm nnoremap <silent><buffer> gf :call <SID>open_in_normal_window()<CR>
