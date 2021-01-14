@@ -30,6 +30,7 @@ Plug 'prettier/vim-prettier', {
   \ 'branch': 'release/0.x'
   \ }
 Plug 'ap/vim-css-color'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
