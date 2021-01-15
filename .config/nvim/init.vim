@@ -30,6 +30,7 @@ Plug 'prettier/vim-prettier', {
   \ }
 Plug 'ap/vim-css-color'
 Plug 'ryanoasis/vim-devicons'
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
 
@@ -161,3 +162,13 @@ nnoremap <silent><leader>i :e ~/.config/nvim/init.vim<cr>
 let g:startify_files_number = 5
 let g:startify_custom_indices = ['l',';','f','d','s','a','h','g']
 let g:startify_fortune_use_unicode = 1
+
+let g:floaterm_wintype = 'normal'
+let g:floaterm_height = 0.4
+
+let g:floaterm_keymap_new    = '<leader>f'
+let g:floaterm_keymap_prev   = '[t'
+let g:floaterm_keymap_next   = ']t'
+let g:floaterm_keymap_toggle = '<leader>t'
+
+autocmd FileType floaterm tnoremap <silent><buffer> <esc> <c-\><c-n>
