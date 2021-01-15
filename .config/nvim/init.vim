@@ -139,7 +139,6 @@ set mouse=a
 let g:coc_global_extensions = ['coc-solargraph', 'coc-tsserver', 'coc-snippets']
 
 map <silent><c-p> :Files<cr>
-let $FZF_DEFAULT_OPTS="--layout reverse"
 
 let g:gruvbox_italic=1
 autocmd vimenter * ++nested colorscheme gruvbox
@@ -172,3 +171,5 @@ let g:floaterm_keymap_next   = ']t'
 let g:floaterm_keymap_toggle = '<leader>t'
 
 autocmd FileType floaterm tnoremap <silent><buffer> <esc> <c-\><c-n>
+
+let g:fzf_layout = { 'down': '40%' }
