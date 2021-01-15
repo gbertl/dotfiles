@@ -173,3 +173,6 @@ let g:floaterm_keymap_toggle = '<leader>t'
 autocmd FileType floaterm tnoremap <silent><buffer> <esc> <c-\><c-n>
 
 let g:fzf_layout = { 'down': '40%' }
+
+" transparent bg
+autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
