@@ -18,7 +18,6 @@ Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-eunuch'
-Plug 'vim-syntastic/syntastic'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -109,15 +108,6 @@ set completeopt-=preview
 let g:indentLine_fileTypeExclude = ['json']
 
 set mouse=a
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 set autoread
 
