@@ -37,39 +37,33 @@ call plug#end()
 set background=dark
 set termguicolors
 
-" fixes termguicolors
 set t_Co=256
 
 let mapleader = ","
 
-set backspace=2   " Backspace deletes like most programs in insert mode
+set backspace=2
 set nobackup
 set nowritebackup
 set noswapfile
 set history=50
-set ruler         " show the cursor position all the time
-set showcmd       " display incomplete commands
-set incsearch     " do incremental searching
-set laststatus=2  " Always display the status line
+set ruler
+set showcmd
+set incsearch
+set laststatus=2
 
-" Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
 
-" Make it obvious where 80 characters is
 set colorcolumn=80
 
-" Numbers
 set number
 set relativenumber
 
-" Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
 
-" Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
@@ -78,7 +72,6 @@ nnoremap <C-l> <C-w>l
 set ignorecase
 set smartcase
 
-" list all buffer at the top and show only filenames
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_theme='minimalist'
@@ -150,7 +143,6 @@ let g:user_emmet_settings = {
 
 let g:user_emmet_leader_key='<C-Z>'
 
-" Leader mappings
 nnoremap <silent><leader>n :NERDTreeToggle<cr>
 nnoremap <silent><leader>i :e ~/.config/nvim/init.vim<cr>
 
@@ -170,5 +162,4 @@ autocmd FileType floaterm tnoremap <silent><buffer> <esc> <c-\><c-n>
 
 let g:fzf_layout = { 'down': '40%' }
 
-" transparent bg
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
