@@ -143,8 +143,6 @@ autocmd FileType floaterm tnoremap <silent><buffer> <esc> <c-\><c-n>
 
 let g:fzf_layout = { 'down': '40%' }
 
-autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
-
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 nmap <silent> ]d :call CocAction('diagnosticNext')<cr>
