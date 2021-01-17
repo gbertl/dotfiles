@@ -110,7 +110,7 @@ let g:startify_session_dir = '~/.config/nvim/session'
 
 set mouse=a
 
-let g:coc_global_extensions = ['coc-tsserver', 'coc-snippets', 'coc-prettier']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-snippets', 'coc-prettier', 'coc-emmet']
 
 map <silent><c-p> :Files<cr>
 
