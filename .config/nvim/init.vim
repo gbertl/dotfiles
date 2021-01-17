@@ -146,3 +146,6 @@ let g:fzf_layout = { 'down': '40%' }
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+nmap <silent> ]d :call CocAction('diagnosticNext')<cr>
+nmap <silent> [d :call CocAction('diagnosticPrevious')<cr>
