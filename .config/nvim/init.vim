@@ -22,10 +22,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'morhetz/gruvbox'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'npm install',
-  \ 'branch': 'release/0.x'
-  \ }
 Plug 'ap/vim-css-color'
 Plug 'ryanoasis/vim-devicons'
 Plug 'voldikss/vim-floaterm'
@@ -121,9 +117,6 @@ map <silent><c-p> :Files<cr>
 let g:gruvbox_italic=1
 autocmd vimenter * ++nested colorscheme gruvbox
 
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
-
 let g:user_emmet_settings = {
 \  'javascript' : {
 \      'extends' : 'jsx',
@@ -151,3 +144,4 @@ autocmd FileType floaterm tnoremap <silent><buffer> <esc> <c-\><c-n>
 let g:fzf_layout = { 'down': '40%' }
 
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
+
