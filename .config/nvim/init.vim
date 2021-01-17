@@ -20,7 +20,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'ap/vim-css-color'
 Plug 'ryanoasis/vim-devicons'
@@ -68,7 +68,7 @@ set smartcase
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline_theme='minimalist'
+let g:airline_theme='nord'
 
 let g:NERDTreeChDirMode       = 2
 
@@ -114,8 +114,7 @@ let g:coc_global_extensions = ['coc-tsserver', 'coc-snippets', 'coc-prettier', '
 
 map <silent><c-p> :Files<cr>
 
-let g:gruvbox_italic=1
-autocmd vimenter * ++nested colorscheme gruvbox
+colorscheme nord
 
 let g:user_emmet_settings = {
 \  'javascript' : {
