@@ -110,7 +110,7 @@ let g:startify_session_dir = '~/.config/nvim/session'
 
 set mouse=a
 
-let g:coc_global_extensions = ['coc-tsserver', 'coc-snippets']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-snippets', 'coc-prettier']
 
 map <silent><c-p> :Files<cr>
 
@@ -145,3 +145,4 @@ let g:fzf_layout = { 'down': '40%' }
 
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 
+command! -nargs=0 Prettier :CocCommand prettier.formatFile

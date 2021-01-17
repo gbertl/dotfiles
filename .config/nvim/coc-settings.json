@@ -1,4 +1,5 @@
 {
   "javascript.validate.enable": false,
-  "suggest.noselect": false
+  "coc.preferences.formatOnSaveFiletypes": ["javascript"],
+  "suggest.noselect": false,
 }
