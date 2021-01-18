@@ -6,6 +6,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
@@ -20,3 +21,6 @@ nnoremap <c-p> :Files<cr>
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1 " enable tabline
+
+" Nord settings
+colorscheme nord
