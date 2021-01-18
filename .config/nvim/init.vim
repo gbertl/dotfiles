@@ -30,6 +30,7 @@ set hidden
 set nohlsearch
 set splitbelow splitright
 set mouse=a
+set tabstop=2 shiftwidth=2 expandtab
 
 " My settings
 let mapleader = ' '
