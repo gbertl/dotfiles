@@ -28,6 +28,7 @@ set number                     " Show current line number
 set relativenumber             " Show relative line numbers
 set hidden
 set nohlsearch
+set splitbelow splitright
 
 " My settings
 let mapleader = ' '
