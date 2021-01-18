@@ -18,6 +18,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
