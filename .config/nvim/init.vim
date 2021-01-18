@@ -43,5 +43,8 @@ let g:user_emmet_leader_key='<C-Z>'
 " CoC settings
 let g:coc_global_extensions = ['coc-emmet', 'coc-snippets', 'coc-tsserver', 'coc-eslint', 'coc-prettier']
 
+nmap <silent> [d <Plug>(coc-diagnostic-prev)
+nmap <silent> ]d <Plug>(coc-diagnostic-next)
+
 " CoC Prettier settings
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
