@@ -16,6 +16,7 @@ call plug#end()
 " General settings
 set number                     " Show current line number
 set relativenumber             " Show relative line numbers
+set hidden
 
 " My settings
 let mapleader = ' '
