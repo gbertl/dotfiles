@@ -32,6 +32,7 @@ set splitbelow splitright
 set mouse=a
 set tabstop=2 shiftwidth=2 expandtab
 set ignorecase smartcase " search case insensitively & smartly
+set termguicolors
 
 " My settings
 let mapleader = ' '
