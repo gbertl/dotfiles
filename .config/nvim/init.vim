@@ -29,6 +29,7 @@ set relativenumber             " Show relative line numbers
 set hidden
 set nohlsearch
 set splitbelow splitright
+set mouse=a
 
 " My settings
 let mapleader = ' '
