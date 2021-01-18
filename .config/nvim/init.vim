@@ -11,6 +11,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'Yggdroot/indentLine'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
@@ -39,4 +41,4 @@ colorscheme nord
 let g:user_emmet_leader_key='<C-Z>'
 
 " CoC settings
-let g:coc_global_extensions = ['coc-emmet']
+let g:coc_global_extensions = ['coc-emmet', 'coc-snippets']
