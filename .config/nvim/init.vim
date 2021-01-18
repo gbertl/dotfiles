@@ -14,6 +14,7 @@ Plug 'mattn/emmet-vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-unimpaired'
+Plug 'tomtom/tcomment_vim'
 
 call plug#end()
 
