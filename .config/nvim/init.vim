@@ -10,6 +10,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'Yggdroot/indentLine'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
@@ -33,3 +34,9 @@ let g:airline#extensions#tabline#enabled = 1 " enable tabline
 
 " Nord settings
 colorscheme nord
+
+" Emmet settings
+let g:user_emmet_leader_key='<C-Z>'
+
+" CoC settings
+let g:coc_global_extensions = ['coc-emmet']
