@@ -23,10 +23,10 @@ set nohlsearch
 let mapleader = ' '
 
 " NERDTree settings
-nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 
 " Fzf settings
-nnoremap <c-p> :Files<cr>
+nnoremap <silent> <c-p> :Files<cr>
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1 " enable tabline
