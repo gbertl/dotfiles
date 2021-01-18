@@ -70,3 +70,6 @@ let g:startify_lists = [
       \ { 'type': 'sessions',  'header': ['   Sessions'] },
       \ { 'type': 'files',     'header': ['   Recent files'] },
       \ ]
+
+" indentLine settings
+let g:indentLine_fileTypeExclude = ['startify']
