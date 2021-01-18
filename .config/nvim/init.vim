@@ -16,6 +16,7 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-unimpaired'
 Plug 'tomtom/tcomment_vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
