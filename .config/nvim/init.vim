@@ -41,4 +41,4 @@ colorscheme nord
 let g:user_emmet_leader_key='<C-Z>'
 
 " CoC settings
-let g:coc_global_extensions = ['coc-emmet', 'coc-snippets', 'coc-tsserver']
+let g:coc_global_extensions = ['coc-emmet', 'coc-snippets', 'coc-tsserver', 'coc-eslint']
