@@ -13,6 +13,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
+" General settings
+set number                     " Show current line number
+set relativenumber             " Show relative line numbers
+
 " My settings
 let mapleader = ' '
 
