@@ -39,6 +39,8 @@ let mapleader = ' '
 " NERDTree settings
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 
+let NERDTreeMinimalUI=1 " hides help line at the top
+
 " Fzf settings
 nnoremap <silent> <c-p> :Files<cr>
 
