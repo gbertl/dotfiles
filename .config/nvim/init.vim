@@ -33,6 +33,7 @@ set mouse=a
 set tabstop=2 shiftwidth=2 expandtab
 set ignorecase smartcase " search case insensitively & smartly
 set termguicolors
+set nobackup nowritebackup noswapfile " since most stuff is in SVN, git etc. anyway
 
 " My settings
 let mapleader = ' '
