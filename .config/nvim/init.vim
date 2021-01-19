@@ -6,7 +6,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'arcticicestudio/nord-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'Yggdroot/indentLine'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -20,6 +19,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'ryanoasis/vim-devicons'
 Plug 'mhinz/vim-startify'
+Plug 'sainnhe/gruvbox-material'
 
 call plug#end()
 
@@ -49,9 +49,6 @@ nnoremap <silent> <c-p> :Files<cr>
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1 " enable tabline
 
-" Nord settings
-colorscheme nord
-
 " Emmet settings
 let g:user_emmet_leader_key='<C-Z>'
 
@@ -75,3 +72,7 @@ let g:startify_lists = [
 
 " indentLine settings
 let g:indentLine_fileTypeExclude = ['startify']
+
+" Gruvbox-material settings
+let g:gruvbox_material_background = 'soft'
+colorscheme gruvbox-material
