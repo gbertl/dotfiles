@@ -78,6 +78,7 @@ let g:startify_lists = [
 
 " indentLine settings
 let g:indentLine_fileTypeExclude = ['startify']
+let g:indentLine_char = '│'
 
 " Gruvbox-material settings
 let g:gruvbox_material_background = 'soft'
