@@ -34,6 +34,7 @@ set tabstop=2 shiftwidth=2 expandtab
 set ignorecase smartcase " search case insensitively & smartly
 set termguicolors
 set nobackup nowritebackup noswapfile " since most stuff is in SVN, git etc. anyway
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro " disable continuation of comments to the nextline
 
 " My settings
 let mapleader = ' '
