@@ -3,5 +3,4 @@
   "coc.preferences.formatOnSaveFiletypes": ["javascript"],
   "suggest.noselect": false,
   "emmet.includeLanguages": {"javascript": "javascriptreact"},
-  "prettier.eslintIntegration": true
 }
