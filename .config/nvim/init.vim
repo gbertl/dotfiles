@@ -78,7 +78,6 @@ nmap <silent> ]d <Plug>(coc-diagnostic-next)
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Startify settings
-let g:startify_session_dir = '~/.config/nvim/session'
 let g:startify_session_persistence = 1
 let g:startify_fortune_use_unicode = 1
 let g:startify_lists = [
