@@ -46,7 +46,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-nnoremap <silent> <leader>i :e ~/.config/nvim/init.vim<cr>
+nnoremap <silent> <leader>i :sp ~/.config/nvim/init.vim<cr>
 
 " NERDTree settings
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
