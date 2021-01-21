@@ -37,6 +37,7 @@ set termguicolors
 set nobackup nowritebackup noswapfile " since most stuff is in SVN, git etc. anyway
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro " disable continuation of comments to the nextline
 set signcolumn=yes
+autocmd FileType nerdtree setlocal signcolumn=no
 
 " My settings
 let mapleader = ' '
