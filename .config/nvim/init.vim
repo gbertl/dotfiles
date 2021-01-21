@@ -70,6 +70,8 @@ set updatetime=300
 nmap <silent> [d <Plug>(coc-diagnostic-prev)
 nmap <silent> ]d <Plug>(coc-diagnostic-next)
 
+inoremap <silent><expr> <c-space> coc#refresh()
+
 " CoC Prettier settings
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
