@@ -62,6 +62,11 @@ let g:airline#extensions#tabline#enabled = 1 " enable tabline
 
 " Emmet settings
 let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_settings = {
+\  'javascript' : {
+\      'extends' : 'jsx',
+\  },
+\}
 
 " CoC settings
 let g:coc_global_extensions = ['coc-emmet', 'coc-snippets', 'coc-tsserver', 'coc-eslint', 'coc-prettier']
