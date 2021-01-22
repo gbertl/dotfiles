@@ -2,4 +2,5 @@
   "javascript.validate.enable": false,
   "coc.preferences.formatOnSaveFiletypes": ["javascript"],
   "suggest.noselect": false,
+  "prettier.bracketSpacing": false
 }
