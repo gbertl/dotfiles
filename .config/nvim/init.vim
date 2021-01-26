@@ -22,6 +22,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'mhinz/vim-startify'
 Plug 'sainnhe/gruvbox-material'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-dispatch'
 
 call plug#end()
 
