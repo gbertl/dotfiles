@@ -3,6 +3,7 @@
 	email = gilbert.lacasandile@gmail.com
 [core]
   editor = nvim
+	fileMode = false
 [alias]
   l = log --oneline
   dc = diff --cached
