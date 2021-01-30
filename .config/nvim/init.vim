@@ -19,7 +19,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ryanoasis/vim-devicons'
-Plug 'mhinz/vim-startify'
 Plug 'sainnhe/gruvbox-material'
 
 call plug#end()
@@ -77,16 +76,8 @@ nmap <silent> ]d <Plug>(coc-diagnostic-next)
 " CoC Prettier settings
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
-" Startify settings
-let g:startify_session_persistence = 1
-let g:startify_fortune_use_unicode = 1
-let g:startify_lists = [
-      \ { 'type': 'sessions',  'header': ['   Sessions'] },
-      \ { 'type': 'files',     'header': ['   Recent files'] },
-      \ ]
-
 " indentLine settings
-let g:indentLine_fileTypeExclude = ['startify', 'help']
+let g:indentLine_fileTypeExclude = ['help']
 let g:indentLine_char = '│'
 
 " Gruvbox-material settings
