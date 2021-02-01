@@ -57,6 +57,7 @@ let NERDTreeMinimalUI=1 " hides help line at the top
 
 " Fzf settings
 nnoremap <silent> <c-p> :Files<cr>
+let $FZF_DEFAULT_OPTS="--layout reverse"
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1 " enable tabline
