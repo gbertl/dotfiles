@@ -20,6 +20,8 @@ Plug 'tpope/vim-repeat'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sainnhe/gruvbox-material'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-dispatch'
 
 call plug#end()
 
