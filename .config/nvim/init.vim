@@ -54,6 +54,7 @@ nnoremap <silent> <leader>i :sp ~/.config/nvim/init.vim<cr>
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 
 let NERDTreeMinimalUI=1 " hides help line at the top
+let g:NERDTreeChDirMode = 2 " auto change the CWD
 
 " Fzf settings
 nnoremap <silent> <c-p> :Files<cr>
