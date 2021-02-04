@@ -59,6 +59,7 @@ let g:NERDTreeChDirMode = 2 " auto change the CWD
 " Fzf settings
 nnoremap <silent> <c-p> :Files<cr>
 let $FZF_DEFAULT_OPTS="--layout reverse"
+nnoremap <silent> <leader>a :Ag<cr>
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1 " enable tabline
