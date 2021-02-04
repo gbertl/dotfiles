@@ -92,7 +92,7 @@ let g:startify_lists = [
       \ ]
 
 " indentLine settings
-let g:indentLine_fileTypeExclude = ['startify', 'help']
+let g:indentLine_fileTypeExclude = ['startify', 'help', 'fugitive']
 let g:indentLine_char = '│'
 
 " Gruvbox-material settings
