@@ -39,6 +39,7 @@ set termguicolors
 set nobackup nowritebackup noswapfile " since most stuff is in SVN, git etc. anyway
 set signcolumn=yes
 autocmd FileType nerdtree setlocal signcolumn=no
+au FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " My settings
 let mapleader = ' '
