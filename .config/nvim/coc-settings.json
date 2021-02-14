@@ -1,6 +1,6 @@
 {
   "javascript.validate.enable": false,
-  "coc.preferences.formatOnSaveFiletypes": ["javascript"],
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "html"],
   "suggest.noselect": false,
   "prettier.bracketSpacing": false
 }
