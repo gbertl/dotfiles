@@ -23,6 +23,7 @@ Plug 'mhinz/vim-startify'
 Plug 'sainnhe/gruvbox-material'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
+Plug 'ap/vim-css-color'
 
 call plug#end()
 
