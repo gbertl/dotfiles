@@ -1,14 +1,10 @@
 priority 1
 
 snippet rfc "react functional component" b
-import React from "react"
-
 function `!p snip.rv = snip.basename`(){
-	return(
-		<div className="`!p snip.rv = snip.basename[0].lower() + snip.basename[1:]`">
-			$0
-		</div>
-		)
+	return (
+		$0
+	)
 }
 
 export default `!p snip.rv = snip.basename`
