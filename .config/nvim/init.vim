@@ -20,10 +20,10 @@ Plug 'tpope/vim-repeat'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ryanoasis/vim-devicons'
 Plug 'mhinz/vim-startify'
-Plug 'sainnhe/gruvbox-material'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
 Plug 'ap/vim-css-color'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
@@ -96,9 +96,8 @@ let g:startify_lists = [
 let g:indentLine_fileTypeExclude = ['startify', 'help', 'fugitive']
 let g:indentLine_char = '│'
 
-" Gruvbox-material settings
-let g:gruvbox_material_background = 'soft'
-colorscheme gruvbox-material
-
 " Auto-pairs settings
 let g:AutoPairsCenterLine = 0
+
+" dracula settings
+colorscheme dracula
