@@ -19,3 +19,5 @@ export NVM_DIR="$HOME/.nvm"
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 
 eval "$(dircolors ~/.dircolors)";
+
+export PATH="$PATH:$(yarn global bin)"
