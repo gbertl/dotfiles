@@ -99,6 +99,3 @@ let g:indentLine_char = '│'
 " Gruvbox-material settings
 let g:gruvbox_material_background = 'soft'
 colorscheme gruvbox-material
-
-" Auto-pairs settings
-let g:AutoPairsCenterLine = 0
