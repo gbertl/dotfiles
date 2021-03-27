@@ -21,3 +21,5 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 eval "$(dircolors ~/.dircolors)";
 
 export PATH="$PATH:$(yarn global bin)"
+
+eval "$(rbenv init -)"
