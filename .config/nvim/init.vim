@@ -67,7 +67,7 @@ let g:airline#extensions#tabline#enabled = 1 " enable tabline
 let g:airline#extensions#tabline#fnamemod = ':t' " Just show the filename (no path) in the tab
 
 " Emmet settings
-let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_leader_key=','
 let g:user_emmet_settings = {
 \  'javascript' : {
 \      'extends' : 'jsx',
