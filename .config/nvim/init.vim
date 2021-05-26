@@ -99,5 +99,4 @@ let g:indentLine_fileTypeExclude = ['startify', 'help', 'fugitive']
 let g:indentLine_char = '│'
 
 " Gruvbox-material settings
-let g:gruvbox_material_background = 'soft'
 colorscheme gruvbox-material
