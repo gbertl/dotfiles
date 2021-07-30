@@ -91,7 +91,7 @@ inoremap <silent><expr> <c-space> coc#refresh()
 
 " CoC Prettier settings
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
-nmap <silent> <leader>p :Prettier<cr>
+nnoremap <silent> <leader>p :Prettier<cr>
 
 " Startify settings
 let g:startify_session_persistence = 1
