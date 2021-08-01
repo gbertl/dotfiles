@@ -58,6 +58,9 @@ nnoremap : ;
 vnoremap ; :
 vnoremap : ;
 
+nnoremap n nzz
+nnoremap N Nzz
+
 " NERDTree settings
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 
