@@ -20,3 +20,28 @@ snip.rv = '-'.join(camel_case_split(t[1])).lower()
 
 export default $1
 endsnippet
+
+snippet caf
+const ${1:function_name} = (${2}) => ${0:${VISUAL}}
+endsnippet
+
+snippet cafb
+const ${1:function_name} = (${2}) => {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet useE
+useEffect(() => {
+	$1
+}, [$0])
+endsnippet
+
+snippet uses
+const [$1, set`!p import re
+def camel_case_split(identifier):
+	matches = re.finditer('.+?(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])|$)', identifier)
+	return [m.group(0) for m in matches]
+
+snip.rv = ''.join([str.title() for str in camel_case_split(t[1])])`] = useState(${0:null})
+endsnippet
