@@ -23,3 +23,5 @@ eval "$(dircolors ~/.dircolors)";
 export PATH="$PATH:$(yarn global bin)"
 
 eval "$(rbenv init -)"
+
+alias p='python3'
