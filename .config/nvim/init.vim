@@ -47,6 +47,8 @@ set signcolumn=yes
 autocmd FileType nerdtree setlocal signcolumn=no
 au FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+set colorcolumn=80
+
 " My settings
 let mapleader = ' '
 
