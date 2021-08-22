@@ -90,7 +90,14 @@ let g:user_emmet_settings = {
 \}
 
 " CoC settings
-let g:coc_global_extensions = ['coc-snippets', 'coc-tsserver', 'coc-eslint', 'coc-prettier']
+let g:coc_global_extensions = [
+\   'coc-snippets',
+\   'coc-tsserver',
+\   'coc-eslint',
+\   'coc-prettier',
+\   'coc-htmldjango',
+\]
+
 set updatetime=300
 
 nmap <silent> [d <Plug>(coc-diagnostic-prev)
