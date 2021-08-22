@@ -105,9 +105,7 @@ nmap <silent> ]d <Plug>(coc-diagnostic-next)
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
-" CoC Prettier settings
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-nnoremap <silent> <leader>p :Prettier<cr>
+nmap <silent><leader>f <Plug>(coc-format)
 
 " Startify settings
 let g:startify_session_persistence = 1
