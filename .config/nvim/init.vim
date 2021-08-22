@@ -35,7 +35,11 @@ set hidden
 set nohlsearch
 set splitbelow splitright
 set mouse=a
+
+" tabwidths
 set tabstop=2 shiftwidth=2 expandtab
+autocmd FileType htmldjango setlocal tabstop=2 shiftwidth=2 expandtab
+
 set ignorecase smartcase " search case insensitively & smartly
 set termguicolors
 set nobackup nowritebackup noswapfile " since most stuff is in SVN, git etc. anyway
