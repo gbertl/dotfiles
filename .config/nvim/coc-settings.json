@@ -1,3 +1,4 @@
 {
   "javascript.validate.enable": false,
+  "suggest.noselect": false,
 }
