@@ -67,6 +67,8 @@ vnoremap : ;
 nnoremap n nzz
 nnoremap N Nzz
 
+nnoremap <silent><leader>o :%bd\|e#\|bd#<cr>
+
 " NERDTree settings
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 
