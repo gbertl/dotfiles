@@ -24,5 +24,5 @@ export PATH="$PATH:$(yarn global bin)"
 
 eval "$(rbenv init -)"
 
-alias p='python3'
-alias pm='python3 manage.py'
+alias p='python'
+alias pm='python manage.py'
