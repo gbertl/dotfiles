@@ -81,7 +81,7 @@ let $FZF_DEFAULT_OPTS="--layout reverse"
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1 " enable tabline
-let g:airline#extensions#tabline#fnamemod = ':t' " Just show the filename (no path) in the tab
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 " Emmet settings
 let g:user_emmet_leader_key=','
