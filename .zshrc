@@ -27,4 +27,6 @@ eval "$(rbenv init -)"
 alias p='python'
 alias pm='python manage.py'
 
+alias ys='BROWSER=none yarn start'
+
 source ~/.zsh_profile
