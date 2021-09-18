@@ -25,6 +25,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-eunuch'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
