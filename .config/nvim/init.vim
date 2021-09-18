@@ -110,6 +110,19 @@ inoremap <silent><expr> <c-space> coc#refresh()
 
 nmap <silent><leader>f <Plug>(coc-format)
 
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
+  else
+    execute '!' . &keywordprg . " " . expand('<cword>')
+  endif
+endfunction
+
 " Startify settings
 let g:startify_session_persistence = 1
 let g:startify_fortune_use_unicode = 1
