@@ -1,9 +1,9 @@
 [user]
-	name = gilbertlc
-	email = gilbert.lacasandile@gmail.com
+  name = gilbertlc
+  email = gilbert.lacasandile@gmail.com
 [core]
   editor = nvim
-	fileMode = false
+  fileMode = false
 [alias]
   l = log --oneline
   dc = diff --cached
