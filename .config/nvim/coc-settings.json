@@ -6,6 +6,10 @@
     "javascript",
     "typescript",
     "json",
-    "jsonc"
-  ]
+    "jsonc",
+    "python"
+  ],
+  "python.pythonPath": "python3",
+  "python.venvPath": "~/environments",
+  "python.formatting.provider": "black"
 }

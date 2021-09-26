@@ -40,6 +40,7 @@ set mouse=a
 " tabwidths
 set tabstop=2 shiftwidth=2 expandtab
 autocmd FileType htmldjango setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab
 
 set ignorecase smartcase " search case insensitively & smartly
 set termguicolors
@@ -99,6 +100,7 @@ let g:coc_global_extensions = [
 \   'coc-eslint',
 \   'coc-prettier',
 \   'coc-htmldjango',
+\   'coc-pyright',
 \]
 
 set updatetime=300
