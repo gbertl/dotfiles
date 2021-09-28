@@ -73,7 +73,7 @@ nnoremap N Nzz
 nnoremap <silent><leader>o :%bd\|e#\|bd#<cr>
 
 " NERDTree settings
-nnoremap <silent> <leader>n :NERDTreeToggle<CR>
+nnoremap <silent> <leader><leader> :NERDTreeToggle<CR>
 
 let NERDTreeMinimalUI=1 " hides help line at the top
 let g:NERDTreeChDirMode = 2 " auto change the CWD
