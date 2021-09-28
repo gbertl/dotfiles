@@ -26,6 +26,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-eunuch'
 Plug 'airblade/vim-gitgutter'
+Plug 'tweekmonster/django-plus.vim'
 
 call plug#end()
 
