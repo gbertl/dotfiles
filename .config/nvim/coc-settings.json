@@ -10,8 +10,6 @@
     "python",
     "htmldjango"
   ],
-  "python.pythonPath": "python3",
-  "python.venvPath": "~/environments",
   "python.formatting.provider": "black",
   "python.formatting.blackArgs": ["--skip-string-normalization"]
 }
