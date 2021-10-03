@@ -13,17 +13,9 @@ alias g='/usr/bin/git'
 
 export KEYTIMEOUT=1
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 
 eval "$(dircolors ~/.dircolors)";
-
-export PATH="$PATH:$(yarn global bin)"
-
-eval "$(rbenv init -)"
 
 alias p='python'
 alias pm='python manage.py'
