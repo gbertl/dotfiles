@@ -61,7 +61,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-nnoremap <silent> <leader>i :sp ~/.config/nvim/init.vim<cr>
+nnoremap <silent> <leader>i :vs ~/.config/nvim/init.vim<cr>
 
 nnoremap ; :
 nnoremap : ;
@@ -143,3 +143,6 @@ let g:indentLine_char = '│'
 " Gruvbox-material settings
 let g:gruvbox_material_background = 'hard'
 colorscheme gruvbox-material
+
+" Fugitive settings
+nnoremap <silent><leader>g :vertical G<cr>
