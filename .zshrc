@@ -25,3 +25,7 @@ alias ys='BROWSER=none yarn start'
 source ~/.zsh_profile
 
 export PATH="$PATH:$(yarn global bin):$HOME/.local/bin"
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
