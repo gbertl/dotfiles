@@ -19,7 +19,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ryanoasis/vim-devicons'
-Plug 'mhinz/vim-startify'
 Plug 'sainnhe/gruvbox-material'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
@@ -125,14 +124,6 @@ function! s:show_documentation()
     execute '!' . &keywordprg . " " . expand('<cword>')
   endif
 endfunction
-
-" Startify settings
-let g:startify_session_persistence = 1
-let g:startify_fortune_use_unicode = 1
-let g:startify_lists = [
-      \ { 'type': 'sessions',  'header': ['   Saved sessions'] },
-      \ { 'type': 'files',     'header': ['   Recent files'] },
-      \ ]
 
 " indentLine settings
 let g:indentLine_fileTypeExclude = ['startify', 'help', 'fugitive']
