@@ -79,6 +79,7 @@ let g:NERDTreeChDirMode = 2 " auto change the CWD
 
 " Fzf settings
 nnoremap <silent> <c-p> :Files<cr>
+nnoremap <silent> <c-t> :Buffers<cr>
 let $FZF_DEFAULT_OPTS="--layout reverse"
 
 " Airline settings
