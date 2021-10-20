@@ -25,6 +25,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'ap/vim-css-color'
 Plug 'tweekmonster/django-plus.vim'
 Plug 'lambdalisue/suda.vim'
+Plug 'tpope/vim-obsession'
 
 call plug#end()
 
