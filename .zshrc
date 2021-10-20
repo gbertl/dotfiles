@@ -6,7 +6,10 @@ plugins=(vi-mode zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
-if [ "$TMUX" = "" ]; then tmux; fi
+if [ -z "$TMUX" ]
+then
+    tmux a || tmux
+fi
 
 alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias g='/usr/bin/git'
