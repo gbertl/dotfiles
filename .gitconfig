@@ -4,6 +4,7 @@
 [core]
   editor = nvim
   fileMode = false
+	excludesFile = ~/.gitignore
 [alias]
   l = log --oneline
   dc = diff --cached
