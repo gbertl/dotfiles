@@ -22,6 +22,8 @@ eval "$(dircolors ~/.dircolors)";
 
 alias p='python'
 alias pm='python manage.py'
+alias nvr='. venv/bin/activate && python manage.py runserver'
+alias pnvr='pipenv run python manage.py runserver'
 
 alias ys='BROWSER=none yarn start'
 
