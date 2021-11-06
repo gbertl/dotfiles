@@ -3,6 +3,7 @@
   "suggest.noselect": false,
   "prettier.singleQuote": true,
   "coc.preferences.formatOnSaveFiletypes": [
+    "html",
     "javascript",
     "typescript",
     "json",
