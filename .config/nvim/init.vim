@@ -101,6 +101,7 @@ let g:coc_global_extensions = [
 \   'coc-prettier',
 \   'coc-htmldjango',
 \   'coc-pyright',
+\   'coc-tailwindcss',
 \]
 
 set updatetime=300
