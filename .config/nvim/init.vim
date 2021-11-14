@@ -20,9 +20,6 @@ Plug 'tpope/vim-repeat'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sainnhe/gruvbox-material'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-dispatch'
-Plug 'ap/vim-css-color'
 Plug 'tweekmonster/django-plus.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'tpope/vim-obsession'
@@ -127,12 +124,9 @@ function! s:show_documentation()
 endfunction
 
 " indentLine settings
-let g:indentLine_fileTypeExclude = ['startify', 'help', 'fugitive']
+let g:indentLine_fileTypeExclude = ['startify', 'help']
 let g:indentLine_char = '│'
 
 " Gruvbox-material settings
 let g:gruvbox_material_background = 'hard'
 colorscheme gruvbox-material
-
-" Fugitive settings
-nnoremap <silent><leader>g :vertical G<cr>
