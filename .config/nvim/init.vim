@@ -59,12 +59,12 @@ nnoremap <C-H> <C-W><C-H>
 
 nnoremap <silent> <leader>i :vs ~/.config/nvim/init.vim<cr>
 
-nnoremap ; :
-nnoremap : ;
-vnoremap ; :
-vnoremap : ;
-
-nnoremap <silent><leader>o :%bd\|e#\|bd#<cr>
+nnoremap <silent>gp :bp<cr>
+nnoremap <silent>gn :bn<cr>
+nnoremap <silent>g$ :bl<cr>
+nnoremap <silent>g0 :bf<cr>
+nnoremap <silent>go :%bd\|e#\|bd#<cr>
+nnoremap <silent>X :e#<cr>
 
 " NERDTree settings
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
