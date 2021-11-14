@@ -23,6 +23,7 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'tweekmonster/django-plus.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'tpope/vim-obsession'
+Plug 'justinmk/vim-sneak'
 
 call plug#end()
 
