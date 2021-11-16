@@ -134,10 +134,10 @@ let g:gruvbox_material_background = 'hard'
 colorscheme gruvbox-material
 
 " telescope
-nnoremap <leader>f <cmd>Telescope find_files<cr>
-nnoremap <leader>g <cmd>Telescope live_grep<cr>
-nnoremap <leader>b <cmd>Telescope buffers<cr>
-nnoremap <leader>h <cmd>Telescope help_tags<cr>
+nnoremap <leader>f <cmd>Telescope find_files theme=ivy<cr>
+nnoremap <leader>g <cmd>Telescope live_grep theme=ivy<cr>
+nnoremap <leader>b <cmd>Telescope buffers theme=ivy<cr>
+nnoremap <leader>h <cmd>Telescope help_tags theme=ivy<cr>
 
 " easymotion
 nmap s <Plug>(easymotion-s)
