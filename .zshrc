@@ -16,8 +16,6 @@ alias g='/usr/bin/git'
 
 export KEYTIMEOUT=1
 
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-
 eval "$(dircolors ~/.dircolors)";
 
 alias p='python'

@@ -2,8 +2,6 @@
 call plug#begin()
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'sheerun/vim-polyglot'
@@ -24,6 +22,8 @@ Plug 'tweekmonster/django-plus.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'tpope/vim-obsession'
 Plug 'justinmk/vim-sneak'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 
@@ -73,11 +73,6 @@ let NERDTreeMinimalUI=1 " hides help line at the top
 let g:NERDTreeChDirMode = 2 " auto change the CWD
 let g:NERDTreeAutoDeleteBuffer = 1
 
-" Fzf settings
-nnoremap <silent> <c-p> :Files<cr>
-nnoremap <silent> <c-t> :Buffers<cr>
-let $FZF_DEFAULT_OPTS="--layout reverse"
-
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1 " enable tabline
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
@@ -109,7 +104,7 @@ nmap <silent> ]d <Plug>(coc-diagnostic-next)
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
-nmap <silent><leader>f <Plug>(coc-format)
+nnoremap <silent><leader>p <Plug>(coc-format)
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -131,3 +126,9 @@ let g:indentLine_char = '│'
 " Gruvbox-material settings
 let g:gruvbox_material_background = 'hard'
 colorscheme gruvbox-material
+
+" telescope
+nnoremap <leader>f <cmd>Telescope find_files<cr>
+nnoremap <leader>g <cmd>Telescope live_grep<cr>
+nnoremap <leader>b <cmd>Telescope buffers<cr>
+nnoremap <leader>h <cmd>Telescope help_tags<cr>
