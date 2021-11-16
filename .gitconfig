@@ -4,11 +4,9 @@
 [core]
   editor = nvim
   fileMode = false
-	excludesFile = ~/.gitignore
+  excludesFile = ~/.gitignore
 [alias]
   l = log --oneline
   dc = diff --cached
   sv = !git add -A && git commit -m 'wip'
-  s = status
-  c = commit
   can = !git add -A && git commit --amend --no-edit
