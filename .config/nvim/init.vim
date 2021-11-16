@@ -50,7 +50,7 @@ au FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set colorcolumn=80
 
 " My settings
-let mapleader = ' '
+let mapleader = ','
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -79,7 +79,7 @@ let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_powerline_fonts = 1
 
 " Emmet settings
-let g:user_emmet_leader_key='<c-z>'
+let g:user_emmet_leader_key=','
 let g:user_emmet_settings = {
 \  'javascript' : {
 \      'extends' : 'jsx',
