@@ -66,6 +66,11 @@ nnoremap <silent>g0 :bf<cr>
 nnoremap <silent>go :%bd\|e#\|bd#<cr>
 nnoremap <silent>X :e#<cr>
 
+nnoremap ; :
+nnoremap : ;
+vnoremap ; :
+vnoremap : ;
+
 " NERDTree settings
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 
