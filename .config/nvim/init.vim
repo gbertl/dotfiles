@@ -126,7 +126,7 @@ function! s:show_documentation()
 endfunction
 
 " indentLine settings
-let g:indentLine_fileTypeExclude = ['startify', 'help']
+let g:indentLine_fileTypeExclude = ['help']
 let g:indentLine_char = '│'
 
 " Gruvbox-material settings
