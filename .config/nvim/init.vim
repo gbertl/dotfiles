@@ -140,4 +140,6 @@ nnoremap <leader>b <cmd>Telescope buffers theme=ivy<cr>
 nnoremap <leader>h <cmd>Telescope help_tags theme=ivy<cr>
 
 " easymotion
-nmap s <Plug>(easymotion-s)
+let g:EasyMotion_do_mapping = 0
+nmap s <Plug>(easymotion-overwin-f2)
+map <leader>s <Plug>(easymotion-s2)
