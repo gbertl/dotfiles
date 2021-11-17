@@ -25,6 +25,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'kyazdani42/nvim-web-devicons'
 
 call plug#end()
 
@@ -134,10 +135,28 @@ let g:gruvbox_material_background = 'hard'
 colorscheme gruvbox-material
 
 " telescope
-nnoremap <leader>f <cmd>Telescope find_files theme=ivy<cr>
-nnoremap <leader>g <cmd>Telescope live_grep theme=ivy<cr>
-nnoremap <leader>b <cmd>Telescope buffers theme=ivy<cr>
-nnoremap <leader>h <cmd>Telescope help_tags theme=ivy<cr>
+nnoremap <c-p> <cmd>Telescope find_files<cr>
+nnoremap <leader>g <cmd>Telescope live_grep<cr>
+nnoremap <leader>b <cmd>Telescope buffers<cr>
+
+lua << EOF
+require('telescope').setup({
+  defaults = {
+    layout_strategy = 'vertical',
+    layout_config = {
+      vertical = {
+        preview_cutoff = 1,
+        width = 0.9,
+      },
+    },
+    mappings = {
+      i = {
+        ["<esc>"] = require('telescope.actions').close,
+      },
+    }
+  },
+})
+EOF
 
 " easymotion
 let g:EasyMotion_do_mapping = 0
