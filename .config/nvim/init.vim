@@ -160,5 +160,5 @@ EOF
 
 " easymotion
 let g:EasyMotion_do_mapping = 0
-nmap s <Plug>(easymotion-overwin-f2)
-map <leader>s <Plug>(easymotion-s2)
+nmap <space> <Plug>(easymotion-overwin-f2)
+map \ <Plug>(easymotion-s2)
