@@ -142,12 +142,15 @@ nnoremap <leader>b <cmd>Telescope buffers<cr>
 lua << EOF
 require('telescope').setup({
   defaults = {
+    sorting_strategy = 'ascending',
     layout_strategy = 'vertical',
     layout_config = {
       vertical = {
         preview_cutoff = 1,
-        width = 0.9,
-      },
+        prompt_position = "top",
+        mirror = true,
+        width = 0.6
+      }
     },
     mappings = {
       i = {
