@@ -84,8 +84,8 @@ let g:airline#extensions#tabline#enabled = 1 " enable tabline
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_powerline_fonts = 1
 
-" Emmet settings
-let g:user_emmet_leader_key=','
+" emmet
+let g:user_emmet_expandabbr_key='<leader>,'
 let g:user_emmet_settings = {
 \  'javascript' : {
 \      'extends' : 'jsx',
