@@ -111,7 +111,9 @@ nmap <silent> ]d <Plug>(coc-diagnostic-next)
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
-nnoremap <silent><leader>p <Plug>(coc-format)
+nmap <silent><leader>f <Plug>(coc-format)
+
+nmap <silent>gd <Plug>(coc-definition)
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
