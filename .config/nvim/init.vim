@@ -49,6 +49,7 @@ set signcolumn=yes
 au FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 set colorcolumn=80
+set cursorline
 
 " My settings
 let mapleader = ','
