@@ -82,7 +82,7 @@ let g:airline#extensions#tabline#enabled = 1 " enable tabline
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_powerline_fonts = 1
 
-" emmet
+" Emmet settings
 let g:user_emmet_expandabbr_key='<leader>,'
 let g:user_emmet_settings = {
 \  'javascript' : {
@@ -133,7 +133,7 @@ let g:indentLine_char = '│'
 let g:gruvbox_material_background = 'hard'
 colorscheme gruvbox-material
 
-" telescope
+" Telescope settings
 nnoremap <c-p> <cmd>Telescope find_files<cr>
 nnoremap <leader>g <cmd>Telescope live_grep<cr>
 nnoremap <leader>b <cmd>Telescope buffers<cr>
@@ -160,7 +160,7 @@ require('telescope').setup({
 })
 EOF
 
-" easymotion
+" Easymotion settings
 let g:EasyMotion_do_mapping = 0
 nmap <space> <Plug>(easymotion-overwin-f2)
 map \ <Plug>(easymotion-s2)
