@@ -1,7 +1,6 @@
 " Plugins
 call plug#begin()
 
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'sheerun/vim-polyglot'
@@ -26,6 +25,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
 
 call plug#end()
 
@@ -46,7 +46,6 @@ set ignorecase smartcase " search case insensitively & smartly
 set termguicolors
 set nobackup nowritebackup noswapfile " since most stuff is in SVN, git etc. anyway
 set signcolumn=yes
-autocmd FileType nerdtree setlocal signcolumn=no
 au FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 set colorcolumn=80
@@ -76,13 +75,6 @@ nnoremap ; :
 nnoremap : ;
 vnoremap ; :
 vnoremap : ;
-
-" NERDTree settings
-nnoremap <silent> <leader>n :NERDTreeToggle<CR>
-
-let NERDTreeMinimalUI=1 " hides help line at the top
-let g:NERDTreeChDirMode = 2 " auto change the CWD
-let g:NERDTreeAutoDeleteBuffer = 1
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1 " enable tabline
@@ -171,3 +163,17 @@ EOF
 let g:EasyMotion_do_mapping = 0
 nmap <space> <Plug>(easymotion-overwin-f2)
 map \ <Plug>(easymotion-s2)
+
+" Tree settings
+nnoremap <silent><C-n> :NvimTreeToggle<CR>
+nnoremap <silent><leader>n :NvimTreeFindFile<CR>
+
+let g:nvim_tree_indent_markers = 1
+let g:nvim_tree_quit_on_open = 1
+
+lua << EOF
+require('nvim-tree').setup({
+  auto_close = true,
+  hijack_cursor = true,
+})
+EOF
