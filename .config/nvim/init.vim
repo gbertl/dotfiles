@@ -4,7 +4,6 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'sheerun/vim-polyglot'
-Plug 'Yggdroot/indentLine'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
 Plug 'SirVer/ultisnips'
@@ -26,6 +25,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 call plug#end()
 
@@ -125,10 +125,6 @@ function! s:show_documentation()
   endif
 endfunction
 
-" indentLine settings
-let g:indentLine_fileTypeExclude = ['help']
-let g:indentLine_char = '│'
-
 " Gruvbox-material settings
 let g:gruvbox_material_background = 'hard'
 colorscheme gruvbox-material
@@ -177,4 +173,11 @@ require('nvim-tree').setup({
   auto_close = true,
   hijack_cursor = true,
 })
+EOF
+
+" indent-blankline settings
+lua << EOF
+require("indent_blankline").setup {
+  buftype_exclude = {"help"}
+}
 EOF
