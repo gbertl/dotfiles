@@ -181,3 +181,13 @@ require("indent_blankline").setup {
   buftype_exclude = {"help"}
 }
 EOF
+
+" treesitter
+lua <<EOF
+require'nvim-treesitter.configs'.setup({
+  ensure_installed = {"css"},
+  highlight = {
+    enable = true,
+  },
+})
+EOF
