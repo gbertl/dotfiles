@@ -158,6 +158,7 @@ EOF
 
 " Easymotion settings
 let g:EasyMotion_do_mapping = 0
+let g:EasyMotion_do_shade = 0
 nmap s <Plug>(easymotion-overwin-f2)
 vmap s <Plug>(easymotion-s2)
 omap z <Plug>(easymotion-s2)
