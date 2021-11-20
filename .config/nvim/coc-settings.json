@@ -4,6 +4,8 @@
   "prettier.singleQuote": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "html",
+    "css",
+    "scss",
     "javascript",
     "typescript",
     "json",
