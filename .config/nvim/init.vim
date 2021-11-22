@@ -62,21 +62,12 @@ nnoremap <C-H> <C-W><C-H>
 
 nnoremap <silent> <leader>i :vs ~/.config/nvim/init.vim<cr>
 
-" buffer switching
-nnoremap <silent>gn :bn<cr>
-nnoremap <silent>gp :bp<cr>
-nnoremap <silent>g0 :bf<cr>
-nnoremap <silent>g$ :bl<cr>
-
-" closing buffer
-nnoremap <silent>go :%bd\|e#\|bd#<cr>
-nnoremap <silent>gx :bd<cr>
-nnoremap <silent>X :e#<cr>
-
 nnoremap ; :
 nnoremap : ;
 vnoremap ; :
 vnoremap : ;
+
+nnoremap <silent><leader>o :%bd\|e#\|bd#<cr>
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1 " enable tabline
