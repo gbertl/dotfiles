@@ -17,5 +17,6 @@
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.local/bin/black",
   "python.formatting.blackArgs": ["--skip-string-normalization"],
-  "tailwindCSS.headwind.runOnSave": false
+  "tailwindCSS.headwind.runOnSave": false,
+  "coc.preferences.extensionUpdateCheck": "daily"
 }
