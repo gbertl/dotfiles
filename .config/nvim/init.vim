@@ -22,7 +22,6 @@ Plug 'tpope/vim-obsession'
 Plug 'easymotion/vim-easymotion'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'lukas-reineke/indent-blankline.nvim'
@@ -218,14 +217,4 @@ lua << EOF
 require("indent_blankline").setup {
   buftype_exclude = {"help"}
 }
-EOF
-
-" treesitter
-lua <<EOF
-require'nvim-treesitter.configs'.setup({
-  ensure_installed = {"css"},
-  highlight = {
-    enable = true,
-  },
-})
 EOF
