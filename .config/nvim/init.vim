@@ -26,6 +26,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
