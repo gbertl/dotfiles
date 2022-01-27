@@ -27,6 +27,7 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'airblade/vim-gitgutter'
+Plug 'ap/vim-css-color'
 
 call plug#end()
 
