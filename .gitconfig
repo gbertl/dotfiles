@@ -10,3 +10,5 @@
   dc = diff --cached
   sv = !git add -A && git commit -m 'wip'
   can = !git add -A && git commit --amend --no-edit
+[init]
+  defaultBranch = main
