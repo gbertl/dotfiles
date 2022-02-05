@@ -28,6 +28,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
+Plug 'hail2u/vim-css3-syntax'
 
 call plug#end()
 
@@ -219,3 +220,10 @@ require("indent_blankline").setup {
   buftype_exclude = {"help"}
 }
 EOF
+
+" vim-css3-syntax settings
+augroup VimCSS3Syntax
+  autocmd!
+
+  autocmd FileType css setlocal iskeyword+=-
+augroup END
