@@ -203,7 +203,6 @@ local list = {
 }
 
 require('nvim-tree').setup({
-  auto_close = true,
   hijack_cursor = true,
   view = {
     mappings = {
