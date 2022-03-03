@@ -121,6 +121,7 @@ endfunction
 
 " Gruvbox-material settings
 let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_disable_italic_comment = 1
 colorscheme gruvbox-material
 
 " Telescope settings
