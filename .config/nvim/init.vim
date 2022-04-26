@@ -45,6 +45,7 @@ set tabstop=2 shiftwidth=2 expandtab
 autocmd FileType htmldjango setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd FileType css setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd BufNewFile,BufRead *.html set filetype=html
 
 set ignorecase smartcase " search case insensitively & smartly
 set termguicolors
