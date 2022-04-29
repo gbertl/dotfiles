@@ -30,3 +30,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH="$(yarn global bin):$PATH"
+
+alias tk='tmux kill-server'
+alias lg='lazygit'
