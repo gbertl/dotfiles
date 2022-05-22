@@ -15,7 +15,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ryanoasis/vim-devicons'
-Plug 'sainnhe/gruvbox-material'
 Plug 'tweekmonster/django-plus.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'tpope/vim-obsession'
@@ -29,6 +28,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
 Plug 'hail2u/vim-css3-syntax'
+Plug 'sainnhe/sonokai'
 
 call plug#end()
 
@@ -120,11 +120,6 @@ function! s:show_documentation()
   endif
 endfunction
 
-" Gruvbox-material settings
-let g:gruvbox_material_background = 'soft'
-let g:gruvbox_material_disable_italic_comment = 1
-colorscheme gruvbox-material
-
 " Telescope settings
 nnoremap <c-p> <cmd>Telescope find_files<cr>
 nnoremap <leader>g <cmd>Telescope live_grep<cr>
@@ -189,3 +184,8 @@ augroup VimCSS3Syntax
 
   autocmd FileType css setlocal iskeyword+=-
 augroup END
+
+" sonokai config
+let g:sonokai_style = 'espresso'
+let g:sonokai_better_performance = 1
+colorscheme sonokai
