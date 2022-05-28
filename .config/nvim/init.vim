@@ -3,7 +3,6 @@ call plug#begin()
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 Plug 'mattn/emmet-vim'
 Plug 'SirVer/ultisnips'
@@ -28,7 +27,9 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
 Plug 'hail2u/vim-css3-syntax'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'sainnhe/sonokai'
+Plug 'jparise/vim-graphql'
 
 call plug#end()
 
@@ -183,7 +184,32 @@ augroup VimCSS3Syntax
   autocmd!
 
   autocmd FileType css setlocal iskeyword+=-
+  autocmd FileType scss setlocal iskeyword+=-
 augroup END
+
+" treesitter config
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = {
+    "html", 
+    "javascript", 
+    "typescript", 
+    "tsx", 
+    "json", 
+    "lua",
+    "python", 
+    "vim",
+    "graphql"
+  },
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false
+  },
+  indent = {
+    enable = true
+  }
+}
+EOF
 
 " sonokai config
 let g:sonokai_style = 'espresso'
