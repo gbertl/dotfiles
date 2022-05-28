@@ -2,7 +2,7 @@ priority 1
 
 snippet fc
 const ${1:`!p snip.rv = snip.basename`} = () => {
-	return <div className='`!p import re
+	return <section className='`!p import re
 def camel_case_split(identifier):
 	matches = re.finditer('.+?(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])|$)', identifier)
 	return [m.group(0) for m in matches]
@@ -10,7 +10,7 @@ def camel_case_split(identifier):
 snip.rv = '-'.join(camel_case_split(t[1])).lower()
 		`'>
 		$0
-	</div>
+	</section>
 }
 
 export default $1
