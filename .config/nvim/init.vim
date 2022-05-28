@@ -33,7 +33,7 @@ Plug 'jparise/vim-graphql'
 
 call plug#end()
 
-" General settings
+" General config
 set number                     " Show current line number
 set relativenumber             " Show relative line numbers
 set hidden
@@ -57,7 +57,7 @@ au FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set colorcolumn=80
 set cursorline
 
-" My settings
+" My config
 let mapleader = ','
 
 nnoremap <C-J> <C-W><C-J>
@@ -74,11 +74,11 @@ vnoremap : ;
 
 nnoremap <silent><leader>o :%bd\|e#\|bd#<cr>
 
-" Airline settings
+" Airline config
 let g:airline#extensions#tabline#enabled = 1 " enable tabline
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
-" Emmet settings
+" Emmet config
 let g:user_emmet_expandabbr_key='<leader>,'
 let g:user_emmet_settings = {
 \  'javascript' : {
@@ -86,7 +86,7 @@ let g:user_emmet_settings = {
 \  },
 \}
 
-" CoC settings
+" CoC config
 let g:coc_global_extensions = [
 \   'coc-snippets',
 \   'coc-tsserver',
@@ -121,7 +121,7 @@ function! s:show_documentation()
   endif
 endfunction
 
-" Telescope settings
+" Telescope config
 nnoremap <c-p> <cmd>Telescope find_files<cr>
 nnoremap <leader>g <cmd>Telescope live_grep<cr>
 nnoremap <leader>b <cmd>Telescope buffers<cr>
@@ -149,14 +149,14 @@ require('telescope').setup({
 require('telescope').load_extension('fzf')
 EOF
 
-" Easymotion settings
+" Easymotion config
 let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_do_shade = 0
 nmap s <Plug>(easymotion-overwin-f2)
 vmap s <Plug>(easymotion-s2)
 omap z <Plug>(easymotion-s2)
 
-" Tree settings
+" Tree config
 nnoremap <silent><C-n> :NvimTreeToggle<CR>
 nnoremap <silent><leader>n :NvimTreeFindFile<CR>
 
@@ -172,14 +172,14 @@ require('nvim-tree').setup({
 })
 EOF
 
-" indent-blankline settings
+" indent-blankline config
 lua << EOF
 require("indent_blankline").setup {
   buftype_exclude = {"help"}
 }
 EOF
 
-" vim-css3-syntax settings
+" vim-css3-syntax config
 augroup VimCSS3Syntax
   autocmd!
 
