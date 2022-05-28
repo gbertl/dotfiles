@@ -12,3 +12,5 @@
   can = !git add -A && git commit --amend --no-edit
 [init]
   defaultBranch = main
+[safe]
+  directory = *
