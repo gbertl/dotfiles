@@ -28,7 +28,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'sainnhe/sonokai'
+Plug 'sainnhe/gruvbox-material'
 Plug 'jparise/vim-graphql'
 
 call plug#end()
@@ -211,7 +211,7 @@ require'nvim-treesitter.configs'.setup {
 }
 EOF
 
-" sonokai config
-let g:sonokai_style = 'espresso'
-let g:sonokai_better_performance = 1
-colorscheme sonokai
+" gruvbox-material config
+let g:gruvbox_material_background = 'soft'
+let g:gruvbox_material_disable_italic_comment = 1
+colorscheme gruvbox-material
