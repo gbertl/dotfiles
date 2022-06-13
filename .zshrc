@@ -34,3 +34,4 @@ export PATH="$(yarn global bin):$PATH"
 alias tk='tmux kill-server'
 alias lg='lazygit'
 alias py='python'
+alias pm='python manage.py'
