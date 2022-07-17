@@ -217,6 +217,3 @@ EOF
 let g:gruvbox_material_background = 'soft'
 let g:gruvbox_material_disable_italic_comment = 1
 colorscheme gruvbox-material
-
-" vim-commentary config
-autocmd FileType typescriptreact setlocal commentstring={/*%s*/}
