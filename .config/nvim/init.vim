@@ -152,9 +152,11 @@ EOF
 " Easymotion config
 let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_do_shade = 0
-nmap s <Plug>(easymotion-overwin-f2)
-vmap s <Plug>(easymotion-s2)
-omap z <Plug>(easymotion-s2)
+let g:EasyMotion_smartcase = 1
+
+nmap s <Plug>(easymotion-overwin-f)
+vmap s <Plug>(easymotion-s)
+omap z <Plug>(easymotion-s)
 
 " Tree config
 nnoremap <silent><C-n> :NvimTreeToggle<CR>
