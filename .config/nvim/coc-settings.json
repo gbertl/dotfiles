@@ -19,5 +19,7 @@
   "python.formatting.blackPath": "~/.pyenv/shims/black",
   "python.formatting.blackArgs": ["--skip-string-normalization"],
   "tailwindCSS.headwind.runOnSave": false,
-  "python.pythonPath": "venv/bin/python"
+  "python.pythonPath": "venv/bin/python",
+  "diagnostic.messageTarget": "echo",
+  "diagnostic.virtualText": true
 }
