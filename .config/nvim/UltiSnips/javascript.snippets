@@ -1,10 +1,17 @@
-extends javascript-react
+priority 1
 
 snippet im
 import ${2} from '${1}';
 endsnippet
 
-snippet af
-($1) => $2
+snippet asf
+async (${1}) => ${0:${VISUAL}}
 endsnippet
 
+snippet asfb
+async (${1}) => {
+	${0:${VISUAL}}
+}
+endsnippet
+
+extends javascript-react
