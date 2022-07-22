@@ -176,7 +176,8 @@ EOF
 " indent-blankline config
 lua << EOF
 require("indent_blankline").setup {
-  buftype_exclude = {"help"}
+  buftype_exclude = {"help"},
+  bufname_exclude = {"NvimTree_1"}
 }
 EOF
 
