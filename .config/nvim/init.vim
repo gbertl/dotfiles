@@ -166,10 +166,9 @@ lua << EOF
 local tree_cb = require'nvim-tree.config'.nvim_tree_callback
 require('nvim-tree').setup({
   hijack_cursor = true,
-  renderer = {
-    indent_markers = {
-      enable = true,
-    }
+  view = {
+    adaptive_size = true,
+    hide_root_folder = true,
   }
 })
 EOF
