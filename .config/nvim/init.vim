@@ -95,6 +95,7 @@ let g:coc_global_extensions = [
 \   'coc-htmldjango',
 \   'coc-pyright',
 \   'coc-tailwindcss',
+\   'coc-css',
 \]
 
 set updatetime=300
