@@ -103,6 +103,9 @@ set updatetime=300
 nmap <silent> [d <Plug>(coc-diagnostic-prev)
 nmap <silent> ]d <Plug>(coc-diagnostic-next)
 
+nmap <silent> [j <Plug>(coc-diagnostic-prev-error)
+nmap <silent> ]j <Plug>(coc-diagnostic-next-error)
+
 inoremap <silent><expr> <c-space> coc#refresh()
 
 nmap <silent><leader>f <Plug>(coc-format)
