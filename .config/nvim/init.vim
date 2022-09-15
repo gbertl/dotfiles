@@ -17,7 +17,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tweekmonster/django-plus.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'tpope/vim-obsession'
-Plug 'easymotion/vim-easymotion'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
@@ -148,15 +147,6 @@ require('telescope').setup({
 })
 require('telescope').load_extension('fzf')
 EOF
-
-" Easymotion config
-let g:EasyMotion_do_mapping = 0
-let g:EasyMotion_do_shade = 0
-let g:EasyMotion_smartcase = 1
-
-nmap s <Plug>(easymotion-overwin-f)
-vmap s <Plug>(easymotion-s)
-omap z <Plug>(easymotion-s)
 
 " Tree config
 nnoremap <silent><C-n> :NvimTreeToggle<CR>
