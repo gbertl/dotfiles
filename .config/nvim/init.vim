@@ -29,6 +29,7 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'sainnhe/gruvbox-material'
 Plug 'jparise/vim-graphql'
+Plug 'windwp/nvim-spectre'
 
 call plug#end()
 
@@ -207,3 +208,13 @@ EOF
 let g:gruvbox_material_background = 'soft'
 let g:gruvbox_material_disable_italic_comment = 1
 colorscheme gruvbox-material
+
+" spectre
+nnoremap S <cmd>lua require('spectre').open()<CR>
+
+"search current word
+nnoremap sw <cmd>lua require('spectre').open_visual({select_word=true})<CR>
+vnoremap s <esc>:lua require('spectre').open_visual()<CR>
+"  search in current file
+nnoremap sp viw:lua require('spectre').open_file_search()<cr>
+" run command :Spectre
