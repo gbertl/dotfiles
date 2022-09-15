@@ -20,6 +20,4 @@
   "python.formatting.blackArgs": ["--skip-string-normalization"],
   "tailwindCSS.headwind.runOnSave": false,
   "python.pythonPath": "venv/bin/python",
-  "diagnostic.messageTarget": "echo",
-  "diagnostic.virtualText": true
 }
