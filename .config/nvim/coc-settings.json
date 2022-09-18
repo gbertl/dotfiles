@@ -10,14 +10,7 @@
     "typescript",
     "typescriptreact",
     "json",
-    "jsonc",
-    "python",
-    "htmldjango"
+    "jsonc"
   ],
-  "python.analysis.typeCheckingMode": "off",
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "~/.pyenv/shims/black",
-  "python.formatting.blackArgs": ["--skip-string-normalization"],
-  "tailwindCSS.headwind.runOnSave": false,
-  "python.pythonPath": "venv/bin/python",
+  "tailwindCSS.headwind.runOnSave": false
 }

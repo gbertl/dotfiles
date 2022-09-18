@@ -14,7 +14,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ryanoasis/vim-devicons'
-Plug 'tweekmonster/django-plus.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'tpope/vim-obsession'
 Plug 'nvim-lua/plenary.nvim'
@@ -43,8 +42,6 @@ set mouse=a
 
 " tabwidths
 set tabstop=2 shiftwidth=2 expandtab
-autocmd FileType htmldjango setlocal tabstop=2 shiftwidth=2 expandtab
-autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd FileType css setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd BufNewFile,BufRead *.html set filetype=html
 
@@ -92,8 +89,6 @@ let g:coc_global_extensions = [
 \   'coc-tsserver',
 \   'coc-eslint',
 \   'coc-prettier',
-\   'coc-htmldjango',
-\   'coc-pyright',
 \   'coc-tailwindcss',
 \   'coc-css',
 \]
@@ -197,7 +192,6 @@ require'nvim-treesitter.configs'.setup {
     "tsx", 
     "json", 
     "lua",
-    "python", 
     "vim",
     "graphql"
   },
