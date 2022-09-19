@@ -12,6 +12,5 @@
     "json",
     "jsonc"
   ],
-  "tailwindCSS.headwind.runOnSave": false,
   "css.lint.unknownAtRules": "ignore"
 }
