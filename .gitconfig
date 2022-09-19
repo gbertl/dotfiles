@@ -2,15 +2,12 @@
   name = gbertl
   email = gilbertlcsndle@gmail.com
 [core]
-  editor = nvim
+  editor = code -w
   fileMode = false
-  excludesFile = ~/.gitignore
 [alias]
   s = status
   l = log --oneline
   dc = diff --cached
-  sv = !git add -A && git commit -m 'wip'
-  can = !git add -A && git commit --amend --no-edit
 [init]
   defaultBranch = main
 [safe]
