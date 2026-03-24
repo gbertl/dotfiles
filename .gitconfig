@@ -2,7 +2,7 @@
   name = gbertl
   email = gilbertlcsndle@gmail.com
 [core]
-  editor = code -w
+  editor = cursor -w
   fileMode = false
 [alias]
   s = status
