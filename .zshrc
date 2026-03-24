@@ -29,8 +29,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="$(yarn global bin):$PATH"
 
-alias lg='lazygit'
-
 . "/home/gbertl/.deno/env"
 
 export NODE_OPTIONS=--dns-result-order=ipv4first
