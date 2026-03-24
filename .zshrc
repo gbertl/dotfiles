@@ -6,11 +6,6 @@ plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
-if [ -z "$TMUX" ]
-then
-    tmux a || tmux
-fi
-
 alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 export KEYTIMEOUT=1
